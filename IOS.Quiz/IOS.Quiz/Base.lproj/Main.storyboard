@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOS_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the first step of iOS development?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-W3-tf5">
+                                <rect key="frame" x="16" y="60" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ8-ql-8eM">
+                                <rect key="frame" x="16" y="417.5" width="398" height="61"/>
+                                <string key="text">Create the user interface. As we create the UI, we will get a better understanding of our application. Then we breath life into our application.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-Wc-m8b">
+                                <rect key="frame" x="0.0" y="84.5" width="72" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Answer">
+                                    <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerQues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dR-RO-pA4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peC-x3-Ji2">
+                                <rect key="frame" x="360" y="88.5" width="54" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <color key="baseForegroundColor" systemColor="systemTealColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbF-aB-g0Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.83529411760000005" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peC-x3-Ji2" secondAttribute="trailing" id="6Oo-H7-bsw"/>
+                            <constraint firstItem="PZ8-ql-8eM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="AEp-Cm-t5S"/>
+                            <constraint firstItem="fnX-Wc-m8b" firstAttribute="top" secondItem="N6Z-W3-tf5" secondAttribute="bottom" constant="8" symbolic="YES" id="AVn-Hd-hD9"/>
+                            <constraint firstItem="N6Z-W3-tf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOL-IE-5hU"/>
+                            <constraint firstItem="fnX-Wc-m8b" firstAttribute="centerY" secondItem="peC-x3-Ji2" secondAttribute="centerY" id="I13-NU-tCU"/>
+                            <constraint firstItem="PZ8-ql-8eM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LfR-8I-ktX"/>
+                            <constraint firstItem="N6Z-W3-tf5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qp1-cO-Nuq"/>
+                            <constraint firstItem="N6Z-W3-tf5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="RA9-yJ-tbr"/>
+                            <constraint firstItem="fnX-Wc-m8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XcE-dZ-fmd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="peC-x3-Ji2" secondAttribute="trailing" id="jSw-9I-r1U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PZ8-ql-8eM" secondAttribute="trailing" id="kpq-bj-Hsd"/>
+                            <constraint firstItem="PZ8-ql-8eM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lZq-0P-bQx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N6Z-W3-tf5" secondAttribute="trailing" constant="16" id="mkM-Tg-CKk"/>
+                            <constraint firstItem="PZ8-ql-8eM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tZq-EA-3Xa"/>
+                            <constraint firstItem="peC-x3-Ji2" firstAttribute="firstBaseline" secondItem="fnX-Wc-m8b" secondAttribute="firstBaseline" id="yKU-hs-xGs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerBtn" destination="fnX-Wc-m8b" id="TQv-gF-3ah"/>
+                        <outlet property="answerLabel" destination="PZ8-ql-8eM" id="2s7-NC-Ibb"/>
+                        <outlet property="nextBtn" destination="peC-x3-Ji2" id="tMu-Lb-aYZ"/>
+                        <outlet property="questions" destination="N6Z-W3-tf5" id="7Dt-SX-bCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
