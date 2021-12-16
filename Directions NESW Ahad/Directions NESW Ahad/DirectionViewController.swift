@@ -12,6 +12,7 @@ class DirectionViewController: UIViewController {
     @IBOutlet weak var directionOutput: UIButton!
     
     var output : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
