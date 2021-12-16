@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aRH-WK-WUB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Directions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Directions_NESW_Ahad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAS-Jg-6CE">
+                                <rect key="frame" x="176.5" y="88" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="North" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.72960460179999997" green="0.75953654189999997" blue="0.62758534759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lX1-Kv-LPD" kind="presentation" identifier="north" id="TYR-oJ-97i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9a-i7-iVG">
+                                <rect key="frame" x="0.0" y="432.5" width="57" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="West" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.72960460179999997" green="0.75953654189999997" blue="0.62758534759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lX1-Kv-LPD" kind="presentation" identifier="west" id="4CC-mI-umT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwo-mI-Fa0">
+                                <rect key="frame" x="362" y="432.5" width="52" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="East">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.72960460179999997" green="0.75953654189999997" blue="0.62758534759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lX1-Kv-LPD" kind="presentation" identifier="east" id="hoJ-gq-YMR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mH9-5k-CeN">
+                                <rect key="frame" x="176" y="831" width="62" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="South" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.72960460177072084" green="0.75953654188948305" blue="0.62758534764608342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lX1-Kv-LPD" kind="presentation" identifier="south" id="j1z-Tn-aqp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.98039215686274506" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nwo-mI-Fa0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2YA-dg-BuB"/>
+                            <constraint firstItem="mH9-5k-CeN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qe6-RJ-fmo"/>
+                            <constraint firstItem="mH9-5k-CeN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W8O-6S-yd2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nwo-mI-Fa0" secondAttribute="trailing" id="e5y-7h-G3P"/>
+                            <constraint firstItem="V9a-i7-iVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rDC-eV-1K9"/>
+                            <constraint firstItem="MAS-Jg-6CE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uHE-qy-0eQ"/>
+                            <constraint firstItem="MAS-Jg-6CE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vZY-oq-AgU"/>
+                            <constraint firstItem="V9a-i7-iVG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wBQ-xr-biK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Directions" id="6rk-Pz-vLB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="230.35714285714283"/>
+        </scene>
+        <!--Direction View Controller-->
+        <scene sceneID="P10-lq-Vhi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbh-Qq-hRR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="lX1-Kv-LPD" customClass="DirectionViewController" customModule="Directions_NESW_Ahad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj3-oe-hwC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnB-xo-u7h">
+                                <rect key="frame" x="162" y="386" width="90" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2hb-AW-f1o"/>
+                                    <constraint firstAttribute="width" constant="90" id="C52-gB-Fie"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.98039215690000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="strokeColor" red="0.72960460179999997" green="0.75953654189999997" blue="0.62758534759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="0.72960460179999997" green="0.75953654189999997" blue="0.62758534759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnOutput:" destination="lX1-Kv-LPD" eventType="touchUpInside" id="OJX-L7-1ja"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Cgk-4B-Qmc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ktk-CE-sml"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.83529411760000005" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fnB-xo-u7h" firstAttribute="centerY" secondItem="jj3-oe-hwC" secondAttribute="centerY" id="lVI-sX-E5g"/>
+                            <constraint firstItem="fnB-xo-u7h" firstAttribute="centerX" secondItem="jj3-oe-hwC" secondAttribute="centerX" id="r1r-Ja-amr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="F9o-Hm-PgE"/>
+                    <connections>
+                        <outlet property="directionOutput" destination="fnB-xo-u7h" id="cvF-Yb-iYm"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="227.67857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RXm-kw-9OH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aRH-WK-WUB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wDv-ac-lTg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gFs-3e-wyu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yCb-Uq-xGS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="230.35714285714283"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="TYR-oJ-97i"/>
+        <segue reference="gFs-3e-wyu"/>
+    </inferredMetricsTieBreakers>
+</document>
