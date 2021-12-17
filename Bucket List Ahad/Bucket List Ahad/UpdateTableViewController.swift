@@ -17,7 +17,7 @@ class UpdateTableViewController: UITableViewController {
     // note holder
     var itemOutput : String?
     
-    var indexPath : NSIndexPath?
+    var indexPath : IndexPath?
     
     
     override func viewDidLoad() {
@@ -37,5 +37,9 @@ class UpdateTableViewController: UITableViewController {
         delegate?.btnCancelAction(by: self)
     }
     
+    override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+        }
+
 
 }

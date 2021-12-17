@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol UpdateDelegate: class {
-    func btnSaveAction(by controller: UpdateTableViewController, with text: String, at indexPath: NSIndexPath?)
+    func btnSaveAction(by controller: UpdateTableViewController, with text: String, at indexPath: IndexPath?)
     func btnCancelAction(by controller: UpdateTableViewController)
 }
 
