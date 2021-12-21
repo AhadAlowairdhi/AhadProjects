@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Local_notifications_Ahad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRP-oe-eNF">
+                                <rect key="frame" x="0.0" y="40" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" image="arrow.uturn.backward" catalog="system" id="Ndf-A0-0vA">
+                                        <connections>
+                                            <action selector="undoAction:" destination="BYZ-38-t0r" id="b8M-vq-Gbi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Sgu-zl-xCI"/>
+                                    <barButtonItem title="Item" image="list.dash" catalog="system" id="oa5-us-96g">
+                                        <connections>
+                                            <action selector="listAction:" destination="BYZ-38-t0r" id="m1Z-WF-JHE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wy7-86-zBt"/>
+                                    <barButtonItem title="Item" image="plus.circle.fill" catalog="system" id="92x-zD-JMa">
+                                        <connections>
+                                            <action selector="plusAction:" destination="BYZ-38-t0r" id="Vxv-Ga-ZNM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Tima:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-2m-YD2">
+                                <rect key="frame" x="16" y="104" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 hours, 0 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlc-aV-3Y7">
+                                <rect key="frame" x="16" y="133" width="382" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cancel Timer Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ft-Wy-IPV">
+                                <rect key="frame" x="16" y="163" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ie0-Vc-ffb">
+                                <rect key="frame" x="0.0" y="348" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6LO-fF-MOt"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tOY-iZ-Un7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="JrQ-Lv-n08"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Until:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRO-VS-3HV">
+                                <rect key="frame" x="16" y="568" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YO4-mF-iVF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tE5-1F-vcY">
+                                <rect key="frame" x="16" y="609" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Timer"/>
+                                <connections>
+                                    <action selector="startTimerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X4k-Gk-aBo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CQz-2m-YD2" firstAttribute="top" secondItem="hRP-oe-eNF" secondAttribute="bottom" constant="20" id="1jf-vw-5eQ"/>
+                            <constraint firstItem="zRO-VS-3HV" firstAttribute="top" secondItem="Ie0-Vc-ffb" secondAttribute="bottom" constant="20" id="3Qp-hy-PbZ"/>
+                            <constraint firstItem="hRP-oe-eNF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="47v-nE-IfT"/>
+                            <constraint firstItem="Xlc-aV-3Y7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Sx-In-c4J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tE5-1F-vcY" secondAttribute="trailing" constant="16" id="5XK-ur-TQG"/>
+                            <constraint firstItem="Ie0-Vc-ffb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7lQ-vE-iNu"/>
+                            <constraint firstItem="Ie0-Vc-ffb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F8I-VV-4ZJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ft-Wy-IPV" secondAttribute="trailing" constant="16" id="Juy-yE-qYF"/>
+                            <constraint firstItem="hRP-oe-eNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mxw-yT-RBd"/>
+                            <constraint firstItem="6ft-Wy-IPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Np7-yp-hLW"/>
+                            <constraint firstItem="Xlc-aV-3Y7" firstAttribute="top" secondItem="CQz-2m-YD2" secondAttribute="bottom" constant="8" symbolic="YES" id="SnV-vn-NxY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ie0-Vc-ffb" secondAttribute="trailing" id="Ui3-Bc-Fsw"/>
+                            <constraint firstItem="tE5-1F-vcY" firstAttribute="top" secondItem="zRO-VS-3HV" secondAttribute="bottom" constant="20" id="VHj-44-8X7"/>
+                            <constraint firstItem="6ft-Wy-IPV" firstAttribute="top" secondItem="Xlc-aV-3Y7" secondAttribute="bottom" constant="8" symbolic="YES" id="bfe-He-fdY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRO-VS-3HV" secondAttribute="trailing" constant="16" id="drF-uu-ZlR"/>
+                            <constraint firstItem="hRP-oe-eNF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="ic6-qL-VHe"/>
+                            <constraint firstItem="hRP-oe-eNF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l92-xF-fo9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQz-2m-YD2" secondAttribute="trailing" constant="16" id="lo7-ID-xqR"/>
+                            <constraint firstItem="tE5-1F-vcY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="m5x-Jj-gpR"/>
+                            <constraint firstItem="CQz-2m-YD2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mAk-KT-4cI"/>
+                            <constraint firstItem="Xlc-aV-3Y7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pwn-Ud-kjj"/>
+                            <constraint firstItem="6ft-Wy-IPV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rLh-Z9-607"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xlc-aV-3Y7" secondAttribute="trailing" constant="16" id="rUH-6m-qKI"/>
+                            <constraint firstItem="Ie0-Vc-ffb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sr4-R2-GbJ"/>
+                            <constraint firstItem="zRO-VS-3HV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uOu-u0-Yds"/>
+                            <constraint firstItem="6ft-Wy-IPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xip-O2-A8P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelSetLabel" destination="6ft-Wy-IPV" id="R0m-ci-RWv"/>
+                        <outlet property="timePickerOutlet" destination="Ie0-Vc-ffb" id="5RP-1q-dG3"/>
+                        <outlet property="timerSetLabel" destination="Xlc-aV-3Y7" id="qHN-E8-fAd"/>
+                        <outlet property="timerWorkUntilLabel" destination="zRO-VS-3HV" id="gEg-iw-t1I"/>
+                        <outlet property="totalTimeLabel" destination="CQz-2m-YD2" id="i6c-wz-XJk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
